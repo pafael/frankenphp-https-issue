@@ -1,0 +1,12 @@
+{
+	frankenphp
+}
+
+https://localhost {
+	root * ./public
+	encode zstd br gzip
+	php_server {
+		resolve_root_symlink
+		enable_full_duplex
+	}
+}
